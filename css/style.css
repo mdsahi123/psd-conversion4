@@ -1,0 +1,103 @@
+/*
+   Common CSS
+*/   
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{font-family: 'Poppins', sans-serif;}
+.main_container{width: 1170px;margin: 0 auto;}
+img{ width: 100%;height: auto;}
+h1,h2,h3,h4,h5,h6{margin: 0; font-weight: 500; color: #222;}
+a{transition: all 0.5s ease-in-out;}
+/*
+  Header Area
+*/
+#header_area{display: flex; justify-content: space-between;}
+header .logo_area{padding: 24px 0;}
+.nav_area nav ul{margin: 0; padding: 0; list-style: none;}
+.nav_area nav ul li{ display: inline-block;}
+.nav_area nav ul li::after{content: ''; height: 3px; background-color: #44c0c2; display: block; width: 0;}
+.nav_area nav ul li:hover:after{width: 100%; transition: all 0.4s ease-in-out;}
+.nav_area nav ul li a{font-size: 16px; display: block; padding: 30px 20px; text-decoration: none; color: #484c55;}
+.nav_area nav ul li a:hover{background-color: #f8f9fb; color: #44c0c2}
+/*
+  Slider Area
+*/
+.slider .slider_item img{position: relative; height: 600px; width: 100%;}  
+.slider .slider_item .slider_text_container{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}  
+.slider .slider_item .slider_text_container .slider_text h1{ font-size: 60px; color: #fff; text-align: center;}  
+.slider .slider_item .slider_text_container .slider_text p{color: #fff; text-align: center; line-height: 1.5em; padding: 15px 0;}  
+.slider .slider_item .slider_text_container .slider_btn {text-align: center; margin: 30px 0;}  
+.slider .slider_item .slider_text_container .slider_btn a{color: #fff; border: 3px solid #fff; padding: 12px 35px; font-size: 16px; text-decoration: none; font-weight: 600;} 
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {bottom: 30px;}
+.bx-wrapper .bx-pager.bx-default-pager a {width: 15px;height: 15px; border-radius: 50%;}
+.bx-wrapper {margin-bottom: 0px; -moz-box-shadow: 0; -webkit-box-shadow: 0; box-shadow: 0 0 }
+/*
+  Service Area
+*/
+#service_area{padding: 100px 0;}
+.service_row{display: flex; flex-direction: row; justify-content: space-between;}
+.service_row .service_col{margin: 0 2%;}
+.service_row .service_col img{width: 80px; height: 80px; display: block; margin: 0 auto;}
+.service_row .service_col h3{font-size: 18px; font-weight: 400; padding-top: 30px; text-align: center;}
+.service_row .service_col p{font-size: 14px; font-weight: 400; text-align: center; padding-top: 10px; opacity: 0.6;}
+.service_row .service_col .service_btn{text-align: center; padding-top: 20px;}
+.service_row .service_col a{color: #fff; background-color: #44c0c2; border: 1px solid #44c0c2; text-decoration: none; text-align: center; display: inline-block; padding: 6px 12px; border-radius: 5px; font-size: 14px;}
+.service_row .service_col a:hover{background: transparent; color: #44c0c2;}
+/*
+  Portfolio
+*/
+#portfolio_area{ background: #f1f1f1; padding-bottom: 30px;}
+#portfolio_area h1{text-align: center; font-size: 36px; font-weight: 400; opacity: 0.7; padding: 40px 0;}
+#portfolio_area .portfolio_container{display: flex; flex-direction: row; flex-wrap: wrap;}
+#portfolio_area .portfolio_container .portfolio_item{margin: 7px 10px;}
+#portfolio_area .portfolio_btn{text-align: center; margin: 50px 0;}
+#portfolio_area .portfolio_btn a{border: 2px solid #44c0c2; padding: 12px 30px; background-color: #44c0c2;color: #fff; font-size: 16px; font-weight: 400; text-decoration: none; border-radius: 5px;}
+#portfolio_area .portfolio_btn a:hover{background: transparent; color: #44c0c2;}
+/*
+  Team Area
+*/
+#team_area{background-color: #fff; padding-bottom: 100px;}
+#team_area h1{text-align: center; font-size: 36px; font-weight: 400; opacity: 0.7; padding: 50px 0;}
+#team_area .team_container{display: flex; flex-direction: row;}
+#team_area .team_container .team_item{margin: 0 15px;}
+#team_area .team_container .team_item .team_img img{width: 150px; height: 150px; border-radius: 50%; object-fit: cover; text-align: center; display: block; margin: 0 auto;}
+#team_area .team_container .team_item .team_desc h5{text-align: center; padding-top: 25px; font-weight: 500; font-size: 18px; opacity: 0.8;}
+#team_area .team_container .team_item .team_desc h6{text-align: center; font-size: 13px; font-weight: 400; opacity: 0.7;}
+#team_area .team_container .team_item .team_desc p{text-align: center; font-size: 14px; font-weight: 400; opacity: 0.6; padding: 10px 0;}
+/*
+  Pricing Area
+*/
+#pricing_area{background: #f1f1f1; padding: 100px 0;}
+#pricing_area .pricing_row{display: flex; flex-direction: row; justify-content: center;}
+#pricing_area .pricing_row .pricing_col{width: 370px; height: auto; margin: 0 30px;}
+#pricing_area .pricing_row .pricing_col h2{color: #fff; font-weight: 400; font-size: 24px; background: #485460; padding: 10px 0; text-align: center;}
+#pricing_area .pricing_row .pricing_col:nth-child(2) h2{background-color: #44c0c2; color: #fff;}
+#pricing_area .pricing_row .pricing_col:nth-child(2) .pricing_btn a{background-color: #44c0c2; color: #fff;}
+#pricing_area .pricing_row .pricing_col:nth-child(2) .pricing_btn a:hover{background-color: #788492; color: #fff;}
+#pricing_area .pricing_row .pricing_col:nth-child(2) ul li a:hover{color: #fff; background: #485460;}
+#pricing_area .pricing_row .pricing_col h3{font-weight: 400; background: #f8f9fb; text-align: center; font-size: 16px; opacity: 0.9; padding: 15px 0;}
+#pricing_area .pricing_row .pricing_col ul{margin: 0; padding: 0; list-style: none; text-align: center;}
+#pricing_area .pricing_row .pricing_col ul li{border-bottom: 1px solid #ddd;}
+#pricing_area .pricing_row .pricing_col ul li a{padding: px 0; display: block; text-decoration: none; color: #333; background: #fff; font-size: 14px; padding: 12px 0; opacity: 0.9; margin-bottom: 1px solid#222;}
+#pricing_area .pricing_row .pricing_col ul li a:hover{color: #fff; background: #44c0c2;}
+#pricing_area .pricing_row .pricing_col .pricing_btn{text-align: center; background: #f8f9fb;}
+#pricing_area .pricing_row .pricing_col .pricing_btn a{padding: 8px 0; text-decoration: none; color: #fff; background: #788492; display: inline-block; width: 170px; margin: 15px 0; border-radius: 5px;}
+#pricing_area .pricing_row .pricing_col .pricing_btn a:hover{color: #fff; background: #44c0c2;}
+/*
+  Footer Area
+*/  
+#footer_area{background: url(../images/footer_img.jpg); padding: 50px 0; background-repeat: no-repeat; background-position: center; background-size: cover;}
+#footer_area .footer_title_box h1{text-align: center; color: #fff; font-size: 36px; font-weight: 400;}
+#footer_area .footer_row{display: flex; justify-content: space-between; padding-top: 50px;}
+#footer_area .footer_row .footer_col:first-child{flex-basis: 40%;}
+#footer_area .footer_row .footer_col h3{color: #fff; font-weight: 400; font-size: 20px; padding: 5px 0;}
+#footer_area .footer_row .footer_col p{color: #fff; font-weight: 400; font-size: 14px; opacity: 0.5;}
+#footer_area .footer_row .footer_col ul{ margin: 0; padding: 0; list-style-type: none; padding: 20px 0;}
+#footer_area .footer_row .footer_col ul li{ display: inline-block; margin-right: 10px;}
+#footer_area .footer_row .footer_col ul li a{ width: 35px; height: 36px; background-color: #2a45dd; color: #fff; display: block; text-align: center; padding-top: 6px; border-radius: 50%;}
+#footer_area .footer_row .footer_col ul li a:hover .fa-facebook-f{background-color: rgb(103, 103, 221);}
+#footer_area .footer_row .footer_col form{width: 60%; float: right;}
+#footer_area .footer_row .footer_col form input{width: 100%; padding: 12px; border: 0; outline: none; margin: 10px 0; border-radius: 5px; font-size: 16px;}
+#footer_area .footer_row .footer_col form textarea{width: 100%; min-height: 130px; border-radius: 5px; padding: 12px; font-family: 'Poppins', sans-serif; border: 0; resize: none; outline: none;}
+#footer_area .footer_row .footer_col form input[type='submit']{color: #fff; background: #44c0c2; width: 130px; padding: 10px 0; cursor: pointer; border: 2px solid #44c0c2;}
+#footer_area .footer_row .footer_col form input[type='submit']:hover{color: #44c0c2; background: transparent; border: 2px solid #44c0c2;}
